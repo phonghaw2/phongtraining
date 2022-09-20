@@ -1,11 +1,13 @@
  
 <?php
 include "db.php";
+
 $start_row = 1;
 $insertquery =
     "INSERT INTO `test` (`sequence1`, `word1`, `number1`) VALUES ";
 $subquery = "";
-// date_default_timezone_set("Asia/Qatar");
+
+
 if (($csv_file = fopen("phonghaw1m.csv", "r")) !== false) {
     $temp_count = 0;
     while (($read_data = fgetcsv($csv_file, 1000, ",")) !== false) {
@@ -18,6 +20,7 @@ if (($csv_file = fopen("phonghaw1m.csv", "r")) !== false) {
         }
         $subquery = substr($subquery, 0, strlen($subquery) - 2);
         $subquery = $subquery . '\')' . " , ";
+
         if ($temp_count % 1000 == 0) {
             $insertquery = $insertquery . $subquery;
             $insertquery = substr($insertquery, 0, strlen($insertquery) - 2);
@@ -30,6 +33,7 @@ if (($csv_file = fopen("phonghaw1m.csv", "r")) !== false) {
             }
         }
     }
+
     fclose($csv_file);
     mysqli_close($conn);
 }

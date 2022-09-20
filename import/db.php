@@ -1,16 +1,19 @@
 
 <?php
+// namespace import;
+
 $hostname='localhost';
 $username='root';
 $password='cms-8341';
 $database='test';
 $conn = new mysqli($hostname,$username,$password,$database);
-if(!$conn){
-die('Error In connection'.mysqli_connect_error());
-}else{
-echo 'Connection Success<br>';
-}
-// mysqli_close($conn);
+
+    if(!$conn){
+        die('Error In connection'.mysqli_connect_error());
+    }else {
+        echo 'Connection Success<br>';
+    }
+
 ?>
 
 
@@ -25,7 +28,7 @@ PRIMARY KEY (sl_no)) -->
 
 
 <!--  
-select count(*) from samplelist
-select * from samplelist order by sl_no asc limit 10
-select * from samplelist order by sl_no desc limit 10
+select count(*) from test
+select * from test order by sl_no asc limit 10
+select * from test order by sl_no desc limit 10
 -->
