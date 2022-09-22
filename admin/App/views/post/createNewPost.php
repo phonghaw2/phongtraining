@@ -17,10 +17,10 @@ session_start();
 </head>
 
 <body class="crm_body_bg">
-    <?php require_once "./mvc/views/layouts/sidebar.php"; ?>
+    <?php require_once "./App/views/layouts/sidebar.php"; ?>
 
     <section class="main_content dashboard_part large_header_bg">
-        <?php require_once "./mvc/views/layouts/header.php"; ?>
+        <?php require_once "./App/views/layouts/header.php"; ?>
         <div class="main_content_iner">
             <div class="container-fluid p-0">
                 <div class="row">

@@ -11,10 +11,10 @@
     <link rel="stylesheet" href="../public/css/style.css">
 </head>
 <body class="crm_body_bg">
-    <?php require_once "./mvc/views/layouts/sidebar.php"; ?>
-
+<?php $this->view('layouts/sidebar') ?>
+    
     <section class="main_content dashboard_part large_header_bg">
-        <?php require_once "./mvc/views/layouts/header.php"; ?>
+        <?php require_once "./App/views/layouts/header.php"; ?>
         <div class="main_content_iner">
             <h1>3eee</h1>
         </div>  

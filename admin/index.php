@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once "./mvc/Bridge.php";
+require_once "./App/Bridge.php";
 $myApp = new App();
 
 

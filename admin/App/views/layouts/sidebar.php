@@ -36,5 +36,16 @@
                 <li><a href="createNewPost">Create new post</a></li>
             </ul>
         </li>
+        <li class="">
+            <a class="has-arrow" href="categories" aria-expanded="false">
+                <div class="nav_icon_small">
+                    <img src="img/menu-icon/12.svg" alt="">
+                </div>
+                <div class="nav_title">
+                    <span>Categories</span>
+                </div>
+            </a>
+            
+        </li>
     </ul>
 </nav>

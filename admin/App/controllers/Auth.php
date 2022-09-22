@@ -1,6 +1,6 @@
 <?php
 
-// http://localhost/live/Home/Show/1/2
+// http://localhost
 
 class Auth extends Controller{
 

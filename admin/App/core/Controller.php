@@ -2,12 +2,13 @@
 class Controller{
 
     public function model($model){
-        require_once "./mvc/models/".$model.".php";
+        require_once "./App/models/".$model.".php";
         return new $model;
     }
 
     public function view($view, $data=[]){
-        require_once "./mvc/views/".$view.".php";
+        extract($data);
+        require_once "./App/views/".$view.".php";
     }
 
 }

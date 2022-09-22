@@ -5897,7 +5897,7 @@ body::-webkit-scrollbar {
 
 /* line 233, G:/admin_project/8 admin/management_html/scss/_dashboard_part.scss */
 .QA_section .QA_table tbody th, .QA_section .QA_table tbody td {
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 400;
   border-bottom: 0;
 }
@@ -5906,13 +5906,13 @@ body::-webkit-scrollbar {
 .QA_section .QA_table tbody th.pending, .QA_section .QA_table tbody td.pending {
   color: #E09079;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 500;
 }
 
 /* line 252, G:/admin_project/8 admin/management_html/scss/_dashboard_part.scss */
 .QA_section .QA_table tbody th.priority_hight, .QA_section .QA_table tbody td.priority_hight {
-  font-size: 14px;
+  font-size: 15px;
   color: #D7598F;
   font-weight: 400;
 }
@@ -5950,7 +5950,7 @@ body::-webkit-scrollbar {
   border-bottom: 0 solid transparent;
   padding: 9px 15px;
   border: 0px solid transparent;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 600;
   color: #474D58;
   white-space: nowrap;

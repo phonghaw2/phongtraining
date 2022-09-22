@@ -2,6 +2,7 @@
 
 class Admin extends Controller{
 
+    public $data =[] ;
  
     function dashboard(){
         $this->view("dashboard");
@@ -10,10 +11,8 @@ class Admin extends Controller{
 
     function userlist(){
         $getUser = $this->model("AdminModel");
-        $allUser = $getUser->getUser();
-        $this->view("user/userlist",[
-            "users" => $allUser,
-        ]);
+        $this->data['users'] = $getUser->getUser();
+        $this->view("user/userlist", $this->data);
 
     }
 
@@ -41,9 +40,15 @@ class Admin extends Controller{
         $action->export();
     }
 
-    function importData(){
+    public function importData(){
         $action = $this->model("AdminModel");
         $action->importData();
+    }
+
+    public function detail($id){
+        $ma = $_GET["ma"];
+        echo 'id san pham bang :'. $id;
+        echo 'ma san pham bang :'. $ma;
     }
 }
 ?>

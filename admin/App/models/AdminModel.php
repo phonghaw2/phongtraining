@@ -1,7 +1,7 @@
 <?php
 class AdminModel extends DB{
     
-
+    protected $_table = 'user';
     
     public function create($fullname, $email, $password ,$role){
 
