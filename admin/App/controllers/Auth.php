@@ -22,7 +22,7 @@ class Auth extends Controller{
         $password = addslashes($_POST['password']);
 
         $role = 'admin';
-        $UserModel = $this->model("AdminModel");
+        $UserModel = $this->model("UserModel");
         $UserModel->create($fullname, $email, $password ,$role);
     }
 
@@ -30,10 +30,20 @@ class Auth extends Controller{
         $email = addslashes($_POST['email']);
         $password = addslashes($_POST['password']);
 
-        $UserModel = $this->model("AdminModel");
+        $UserModel = $this->model("UserModel");
         $UserModel->loginProcess($email, $password);
     }
 
+    function logout(){
+        session_start();
+        unset($_SESSION['id']);
+        unset($_SESSION['fullname']);
+        unset($_SESSION['role']);
+        setcookie('remember',null,-1);
+
+        header('location:../auth/login');
+
+    }
    
 }
 ?>

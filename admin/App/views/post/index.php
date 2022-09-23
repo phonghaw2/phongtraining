@@ -43,9 +43,9 @@
                                         <div class="box_right d-flex lms_block">
                                             <div class="serach_field_2">
                                                 <div class="search_inner">
-                                                    <form active="">
+                                                    <form active="#">
                                                         <div class="search_field">
-                                                            <input type="search" name="search" id="search" value="<?php echo $search ?>">
+                                                            <input type="text" placeholder="Search user name...">
                                                         </div>
                                                         <button type="submit"><i class='bx bx-search-alt-2' style="font-size:16px;"></i></button>
                                                         
@@ -71,7 +71,7 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <?php foreach ($users as $each) { ?>
+                                                <?php foreach ($posts as $each) { ?>
                                                     <tr>
                                                         <th scope="row"><?php echo $each['id'] ?></th>
                                                         <td><?php echo $each['fullname'] ?></td>
@@ -104,7 +104,7 @@
                                     <?php for ($i = 1; $i <= $pages; $i++) { ?>
                                         <li class="page-item">
                                             <!-- <a href="?page=<?php echo $i ?>&search=<?php echo $search ?>&style=<?php echo $style ?>"> -->
-                                            <a href="?page=<?php echo $i ?>&search=<?php echo $search ?>" class="page-link">
+                                            <a href="?page=<?php echo $i ?>" class="page-link">
                                                 <?php echo $i  ?>
                                             </a>
                                         </li>

@@ -9,11 +9,15 @@ class App{
         global $routes, $config;
 
 
+        
         $this->__route = new Route();
-
+        
+        
         $this->controller= $routes['default_controller'];
         $this->action="index";
         $this->params=[];
+
+        
  
         $arr = $this->handleUrl();
  

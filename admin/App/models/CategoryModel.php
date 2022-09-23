@@ -2,6 +2,7 @@
 
 class CategoryModel extends DB 
 {
+   
     protected $table = 'categories';
     public function getCategory(){
         $qr = "SELECT cat.*, count(*) mount FROM categories as cat

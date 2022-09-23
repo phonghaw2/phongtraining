@@ -1,11 +1,31 @@
 <?php
+
+use App\core\QueryBuilder;
+
 class UserModel extends DB{
-    
-    protected $_table = 'user';
-    
+
+    private $__table = 'user';
+
+    public function update($fullname, $password, $role ,$email){
+        
+        $sql = "update $this->__table
+            set
+            fullname = '$fullname',
+            password = '$password',
+            role = '$role'
+            where
+            email = '$email'
+            ";
+        mysqli_query($this->con,$sql);
+
+        mysqli_close($this->con);
+
+       
+    }
+
     public function create($fullname, $email, $password ,$role){
 
-        $sql = "SELECT count(*) from user where email = '$email'";
+        $sql = "SELECT count(*) from $this->__table where email = '$email'";
         $result = mysqli_query($this->con,$sql);
         $number_rows = mysqli_fetch_array($result)['count(*)'];
 
@@ -15,7 +35,7 @@ class UserModel extends DB{
             header('location:'. $_SERVER['HTTP_REFERER']);
             exit;
         }
-        $sql = "INSERT INTO user (fullname,email,password,role)
+        $sql = "INSERT INTO $this->__table (fullname,email,password,role)
                 VALUES  ('$fullname','$email','$password','$role')";
         mysqli_query($this->con,$sql);
 
@@ -25,7 +45,7 @@ class UserModel extends DB{
     }
 
     public function loginProcess($email, $password){ 
-        $sql = "SELECT * from user 
+       $sql = "SELECT * FROM user 
                 where email = '$email' and password = '$password'";
         $result = mysqli_query($this->con,$sql);
         $number_rows = mysqli_num_rows($result);
@@ -37,6 +57,7 @@ class UserModel extends DB{
             $id = $each['id'];
             $_SESSION['fullname'] = $each['fullname'];
             $_SESSION['id'] = $id;
+            $_SESSION['role'] = $each['role'];
 
             // Token & set cookie
             $token = uniqid('user_', true) . time();
@@ -59,11 +80,6 @@ class UserModel extends DB{
     }
 
 
-    public function getUser(){
-        
-       $data = $this->db->query("SELECT * FROM $this->_table ")->fetchAll(PDO::FETCH_ASSOC);
-    }
-
     public function export(){
         $filename = "members_" . date('Y-m-d') . ".csv"; 
         $delimiter = ","; 
@@ -77,7 +93,7 @@ class UserModel extends DB{
         
         // Get records from the database 
 
-        $qr = "SELECT * FROM user ORDER BY id DESC";
+        $qr = "SELECT * FROM $this->__table ORDER BY id DESC";
         $result = mysqli_query($this->con, $qr);
         if($result->num_rows > 0){ 
             // Output each row of the data, format line as csv and write to file pointer 
@@ -162,6 +178,49 @@ class UserModel extends DB{
         header('location:'. $_SERVER['HTTP_REFERER']);
         exit;
         
+    }
+
+    public function getUser($number_per_page, $skip , $search){
+        
+        $qr = "SELECT * FROM $this->__table where 
+        fullname like '%$search%' OR  email like '%$search%'  limit $number_per_page offset $skip";
+        $result = mysqli_query($this->con, $qr);
+
+        return $result ;
+    }
+
+    public function getPage($search){
+        $sql_number_of = "select count(*) from $this->__table where 
+        fullname like '%$search%' OR  email like '%$search%' ";
+        $array_number_of = mysqli_query($this->con,$sql_number_of);
+        $numberOf = mysqli_fetch_array($array_number_of);
+        $number_of = $numberOf['count(*)'];
+        
+
+        return $number_of;
+    }
+
+    public function delete($id){
+
+        $sql = "DELETE FROM $this->__table WHERE id=$id ";
+
+        var_dump($sql);
+        mysqli_query($this->con,$sql);
+        mysqli_close($this->con);
+
+    }
+
+    public function checkUser($token){
+        $sql = "select * from user
+        where token = '$token' limit 1";
+        $result = mysqli_query($this->con,$sql);
+        $number_rows = mysqli_num_rows($result);
+        if($number_rows == 1 ){
+            $each = mysqli_fetch_array($result);
+            $_SESSION['id'] = $each['id'];
+            $_SESSION['fullname'] = $each['fullname'];
+            $_SESSION['role'] = $each['role'];
+        };
     }
 
 }

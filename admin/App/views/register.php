@@ -43,7 +43,7 @@
                                     <input type="email" class="form-control" name="email" placeholder="Enter your email">
                                 </div>
                                 <div class="">
-                                    <input type="password" class="form-control" name="password" placeholder="Password">
+                                    <input type="password" class="form-control" name="password" placeholder="Password" >
                                 </div>
                                
                                 <button class="btn_1 full_width text-center">Sign Up</button>

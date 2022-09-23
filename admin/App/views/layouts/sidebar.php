@@ -11,7 +11,7 @@
         <li class="">
             <a class="has-arrow" href="#" aria-expanded="false">
                 <div class="nav_icon_small">
-                    <img src="img/menu-icon/5.svg" alt="">
+                    <i class='bx bxs-user' ></i>
                 </div>
                 <div class="nav_title">
                     <span>Users</span>
@@ -43,6 +43,17 @@
                 </div>
                 <div class="nav_title">
                     <span>Categories</span>
+                </div>
+            </a>
+            
+        </li>
+        <li class="">
+            <a class="has-arrow" href="../auth/logout" aria-expanded="false">
+                <div class="nav_icon_small">
+                    <i class='bx bx-door-open' ></i>
+                </div>
+                <div class="nav_title">
+                    <span>Log out</span>
                 </div>
             </a>
             
