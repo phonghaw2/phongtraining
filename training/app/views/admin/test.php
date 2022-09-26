@@ -1,26 +1,3 @@
-<?php 
-    session_start();
-    // require_once "./mvc/views/check/isset_token";
-    // if(isset($_SESSION['id'])){
-    //     header('location:../admin');
-    //     exit;
-    // }
-?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-
-    <link rel="stylesheet" href="../public/css/bootstrap1.min.css">
-    <link rel="stylesheet" href="../public/css/style1.css">
-    <link rel="stylesheet" href="../public/css/style.css">
-</head>
-
-<body>
 <div class="col-lg-12">
         <div class="white_box mb_30">
             <div class="row justify-content-center">
@@ -51,7 +28,3 @@
             </div>
         </div>
     </div>
-
-</body>
-
-</html>

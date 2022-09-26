@@ -2,7 +2,7 @@
     "host": "192.168.1.230",
     "username": "gdit_ftp",
     "password": "gdit6385",
-    "remotePath": "/htdocs/training/",
+    "remotePath": "/htdocs/training/training",
     "protocol": "ftp",
     "port": 0,
     "fileNameEncoding": "utf8",

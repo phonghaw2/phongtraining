@@ -8,15 +8,12 @@
     
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
-    <link rel="stylesheet" href="/css/bootstrap1.min.css">
-    <link rel="stylesheet" href="/css/style1.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap1.min.css">
+    <link rel="stylesheet" href="./css/style1.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="crm_body_bg">
-<?php $this->view('layouts/sidebar') ?>
-    
     <section class="main_content dashboard_part large_header_bg">
-        <?php require_once "./App/views/layouts/header.php"; ?>
         <div class="main_content_iner">
         <div class="container-fluid p-0">
                 <div class="row">

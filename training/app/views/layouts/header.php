@@ -13,7 +13,6 @@
                     <div class="profile_info d-flex">
                         <img src="img/.png" alt="#">
                         <div class="header-author">
-                            <span><?php echo $_SESSION['fullname'] ?></span>
                         </div>
                         <div class="profile_info_iner">
                             <div class="profile_author_name">
