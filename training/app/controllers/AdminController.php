@@ -19,13 +19,20 @@ class AdminController extends Controller
     public function dashboardAction()
     {
         $this->data['title'] = 'Dashboard';
-        $this->data['content'] = 'admin/test';
+        $this->data['content'] = 'admin/dashboard';
         View::render('layouts/master.php',$this->data);
     }
 
     public function indexAction()
     {
-        echo 111;
+        $user = new User();
+        $data = $user->table('user')->find(1); 
+        // return $data;
+
+        // $data = User::test();
+        echo '<pre>';
+        print_r($data);
+        echo '</pre>';
     }
 
 
@@ -42,7 +49,6 @@ class AdminController extends Controller
             
         } 
         $number_of =  User::getPage($search);
-        var_dump($number_of);
         $number_per_page = 3;
 
         $pages = ceil($number_of / $number_per_page);

@@ -20,7 +20,7 @@ class Config
      * Database name
      * @var string
      */
-    const DB_NAME = 'phonghaw2';
+    const DB_NAME = 'training';
 
     /**
      * Database user
@@ -32,7 +32,7 @@ class Config
      * Database password
      * @var string
      */
-    const DB_PASSWORD = 'cms-8341';
+    const DB_PASSWORD = '';
 
     /**
      * Show or hide error messages on screen

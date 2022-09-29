@@ -5,6 +5,7 @@ namespace Core;
 use PDO;
 use App\Config;
 
+
 /**
  * Base model
  *
@@ -12,7 +13,7 @@ use App\Config;
  */
 abstract class Model
 {
-
+    
     /**
      * Get the PDO database connection
      *
@@ -31,4 +32,8 @@ abstract class Model
 
         return $db;
     }
+
+    
+
+    
 }
