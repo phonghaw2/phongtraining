@@ -1,0 +1,382 @@
+{
+  "ftp://gdit_ftp@192.168.1.230": {
+    "htdocs": {
+      "alma": {},
+      "chiba_kanko": {},
+      "coverage": {},
+      "key_file": {},
+      "minatoku": {},
+      "saitama_kenpo": {},
+      "saitama_kenpo_testing": {},
+      "training": {
+        "app": {
+          "Config.php": {
+            "type": "-",
+            "size": 614,
+            "lmtime": 1663657648708,
+            "modified": false
+          },
+          "Controllers": {
+            "Home.php": {
+              "type": "-",
+              "size": 342,
+              "lmtime": 1663658426270,
+              "modified": false
+            },
+            "HomeController.php": {
+              "type": "-",
+              "size": 352,
+              "lmtime": 1663659335137,
+              "modified": false
+            }
+          },
+          "Views": {
+            "default": {
+              "index.php": {
+                "type": "-",
+                "size": 33,
+                "lmtime": 1663657884528,
+                "modified": false
+              }
+            },
+            "Default": {
+              "index.php": {
+                "type": "-",
+                "size": 33,
+                "lmtime": 1663657884528,
+                "modified": false
+              }
+            }
+          },
+          "controllers": {
+            "DefaultController.php": {
+              "type": "-",
+              "size": 340,
+              "lmtime": 1663658082740,
+              "modified": false
+            },
+            "Home.php": {
+              "type": "-",
+              "size": 342,
+              "lmtime": 1663658237728,
+              "modified": false
+            }
+          },
+          "views": {
+            "Default": {
+              "index.php": {
+                "type": "-",
+                "size": 33,
+                "lmtime": 1663657884528,
+                "modified": false
+              }
+            },
+            "default": {
+              "index.php": {
+                "type": "-",
+                "size": 33,
+                "lmtime": 1663657884528,
+                "modified": false
+              }
+            },
+            "home": {
+              "index.php": {
+                "type": "-",
+                "size": 33,
+                "lmtime": 1663657884528,
+                "modified": false
+              }
+            }
+          }
+        },
+        "composer.json": {
+          "type": "-",
+          "size": 271,
+          "lmtime": 1663656260536,
+          "modified": true
+        },
+        "composer.lock": {
+          "type": "-",
+          "size": 571,
+          "lmtime": 1663657546912,
+          "modified": false
+        },
+        "core": {
+          "Controller.php": {
+            "type": "-",
+            "size": 1657,
+            "lmtime": 1663656976421,
+            "modified": false
+          },
+          "Error.php": {
+            "type": "-",
+            "size": 2115,
+            "lmtime": 1663656976421,
+            "modified": false
+          },
+          "Model.php": {
+            "type": "-",
+            "size": 677,
+            "lmtime": 1663656976422,
+            "modified": false
+          },
+          "Router.php": {
+            "type": "-",
+            "size": 6278,
+            "lmtime": 1663656976422,
+            "modified": false
+          },
+          "View.php": {
+            "type": "-",
+            "size": 645,
+            "lmtime": 1663658454239,
+            "modified": false
+          }
+        },
+        "public": {
+          ".htaccess": {
+            "type": "-",
+            "size": 66,
+            "lmtime": 1663660577110,
+            "modified": false
+          },
+          "css": {},
+          "img": {},
+          "index.php": {
+            "type": "-",
+            "size": 480,
+            "lmtime": 1663660389851,
+            "modified": false
+          },
+          "js": {}
+        },
+        "vendor": {
+          "autoload.php": {
+            "type": "-",
+            "size": 0,
+            "lmtime": 1663657546915,
+            "modified": false
+          },
+          "composer": {
+            "ClassLoader.php": {
+              "type": "-",
+              "size": 0,
+              "lmtime": 1663657546919,
+              "modified": false
+            },
+            "InstalledVersions.php": {
+              "type": "-",
+              "size": 0,
+              "lmtime": 1663657546922,
+              "modified": false
+            },
+            "LICENSE": {
+              "type": "-",
+              "size": 0,
+              "lmtime": 1663657546926,
+              "modified": false
+            },
+            "autoload_classmap.php": {
+              "type": "-",
+              "size": 0,
+              "lmtime": 1663657546929,
+              "modified": false
+            },
+            "autoload_namespaces.php": {
+              "type": "-",
+              "size": 0,
+              "lmtime": 1663657546931,
+              "modified": false
+            },
+            "autoload_psr4.php": {
+              "type": "-",
+              "size": 0,
+              "lmtime": 1663657546935,
+              "modified": false
+            },
+            "autoload_real.php": {
+              "type": "-",
+              "size": 0,
+              "lmtime": 1663657546947,
+              "modified": false
+            },
+            "autoload_static.php": {
+              "type": "-",
+              "size": 0,
+              "lmtime": 1663657546950,
+              "modified": false
+            },
+            "installed.json": {
+              "type": "-",
+              "size": 0,
+              "lmtime": 1663657546953,
+              "modified": false
+            },
+            "installed.php": {
+              "type": "-",
+              "size": 0,
+              "lmtime": 1663657546956,
+              "modified": false
+            }
+          }
+        },
+        "training": {
+          ".vscode": {},
+          ".vscode - Copy": {},
+          "README.md": {
+            "type": "-",
+            "size": 20,
+            "lmtime": 0,
+            "modified": true
+          },
+          "app": {
+            "controllers": {
+              "DefaultController.php": {
+                "type": "-",
+                "size": 307,
+                "lmtime": 1664866319993,
+                "modified": false
+              },
+              "HomeController.php": {
+                "type": "-",
+                "size": 3602,
+                "lmtime": 1664875092539,
+                "modified": false
+              }
+            },
+            "views": {
+              "default": {
+                "compare.php": {
+                  "type": "-",
+                  "size": 2656,
+                  "lmtime": 1664879102677,
+                  "modified": false
+                },
+                "index.php": {
+                  "type": "-",
+                  "size": 2607,
+                  "lmtime": 1664422996886,
+                  "modified": false
+                },
+                "test.php": {
+                  "type": "-",
+                  "size": 1094,
+                  "lmtime": 1664872228505,
+                  "modified": false
+                }
+              }
+            }
+          },
+          "composer.json": {
+            "type": "-",
+            "size": 271,
+            "lmtime": 1664188339425,
+            "modified": true
+          },
+          "composer.lock": {
+            "type": "-",
+            "size": 589,
+            "lmtime": 0,
+            "modified": true
+          },
+          "composer.phar": {
+            "type": "-",
+            "size": 2801573,
+            "lmtime": 0,
+            "modified": false
+          },
+          "core": {
+            "Controller.php": {
+              "type": "-",
+              "size": 1637,
+              "lmtime": 0,
+              "modified": true
+            },
+            "Error.php": {
+              "type": "-",
+              "size": 2054,
+              "lmtime": 0,
+              "modified": true
+            },
+            "Http": {},
+            "Model.php": {
+              "type": "-",
+              "size": 672,
+              "lmtime": 0,
+              "modified": true
+            },
+            "QueryBuilder.php": {
+              "type": "-",
+              "size": 8664,
+              "lmtime": 0,
+              "modified": true
+            },
+            "Router.php": {
+              "type": "-",
+              "size": 6298,
+              "lmtime": 1664187957608,
+              "modified": true
+            },
+            "View.php": {
+              "type": "-",
+              "size": 640,
+              "lmtime": 0,
+              "modified": true
+            },
+            "inc": {
+              "diff.txt": {
+                "type": "-",
+                "size": 0,
+                "lmtime": 1664784551071,
+                "modified": false
+              },
+              "file1.inc": {
+                "type": "-",
+                "size": 768,
+                "lmtime": 1664790846395,
+                "modified": true
+              },
+              "file2.inc": {
+                "type": "-",
+                "size": 845,
+                "lmtime": 1664871164305,
+                "modified": false
+              },
+              "setDefineArray.php": {
+                "type": "-",
+                "size": 261,
+                "lmtime": 1664771281817,
+                "modified": false
+              }
+            }
+          },
+          "public": {
+            ".htaccess": {
+              "type": "-",
+              "size": 178,
+              "lmtime": 0,
+              "modified": false
+            },
+            "admin": {},
+            "admin.php": {
+              "type": "-",
+              "size": 25,
+              "lmtime": 0,
+              "modified": false
+            },
+            "css": {},
+            "index.php": {
+              "type": "-",
+              "size": 923,
+              "lmtime": 1664188192719,
+              "modified": false
+            },
+            "js": {}
+          },
+          "vendor": {}
+        }
+      }
+    }
+  },
+  "$version": 1
+}
