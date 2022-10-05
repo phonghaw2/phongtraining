@@ -110,7 +110,9 @@ class Request
      */
     public function getGet()
     {
-        return $this->get;
+        $data =  Request::getProtectedValue($this->get, 'container');
+        return $data;
+
     }
 
     /**
@@ -254,5 +256,11 @@ class Request
     public function getUser(){
         return $this->session->user;
     }
+
+    public function getProtectedValue($obj, $name) {
+        $array = (array)$obj;
+        $prefix = chr(0).'*'.chr(0);
+        return $array[$prefix.$name];
+      }
 }
 

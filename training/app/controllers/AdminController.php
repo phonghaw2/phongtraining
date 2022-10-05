@@ -5,11 +5,13 @@ namespace App\Controllers;
 use App\Models\User;
 use Core\Controller;
 use Core\View;
+use Core\Http\Request;
 
 class AdminController extends Controller
 {
 
     public $data =[] ;
+    
     /**
      * Show the Dashboard page
      * $title  for title tag
@@ -23,15 +25,23 @@ class AdminController extends Controller
         View::render('layouts/master.php',$this->data);
     }
 
-    public function indexAction()
+    public function testAction()
     {
-        $user = new User();
-        $data = $user->table('user')->find(1); 
-        // return $data;
-
+        $request = new Request();
+        $data = $request->getGet();
+        // $reflection = new Request($data);
+        // $result = $reflection->getGet();
+        
+        // function getProtectedValue($obj, $name) {
+        //     $array = (array)$obj;
+        //     $prefix = chr(0).'*'.chr(0);
+        //     return $array[$prefix.$name];
+        //   }
+        // echo $object_decoded;
         // $data = User::test();
+        // $phong = getProtectedValue($data, 'container');
         echo '<pre>';
-        print_r($data);
+        print_r($data['name']);
         echo '</pre>';
     }
 

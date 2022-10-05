@@ -244,5 +244,126 @@ Trait QueryBuilder
         $this->innerJoin = "INNER JOIN" .$tableName. " ON " .$relationship." ";
         return $this;
     }
+    
+    /**
+     * Execute the insert query .
+     *
+     * @param  array|mixed  $data
+     * @return boolean
+     */
+    public function insert($data){
+        
+        $db = static::getDB();
+        $tableName = $this->_table;
+
+        if(!empty($data)){
+            $columnStr = '';
+            $valueStr = '';
+            foreach($data as $key => $value){
+                $columnStr.= $key.',';
+                $valueStr.= "'".$value."',";
+            }
+            $columnStr = rtrim($columnStr, ',');
+            $valueStr = rtrim($valueStr, ',');
+
+            $sqlQuery = "INSERT INTO $tableName ($columnStr) VALUES ($valueStr)";
+            $query = $db->query($sqlQuery);
+
+            if($query){
+                return true;
+            }
+        }
+        
+        return false;
+    }
+
+    /**
+     * Execute the update query .
+     *
+     * @param  array|mixed  $data
+     * @param  array|mixed  $conditions
+     * @return boolean
+     */
+    public function update($data , $conditions = ''){
+        
+        $db = static::getDB();
+        $tableName = $this->_table;
+
+        if(!empty($data)){
+            $updateStr = '';
+            foreach($data as $key => $value){
+                $updateStr.= "$key = '$value',";
+            }
+            $updateStr = rtrim($updateStr, ',');
+            
+            if(!empty($conditions)){
+                $sqlQuery = "UPDATE $tableName SET $updateStr WHERE $conditions";
+            }else {
+                $sqlQuery = "UPDATE $tableName SET $updateStr ";
+            }
+
+            $query = $db->query($sqlQuery);
+
+            if($query){
+                return true;
+            }
+        }
+        
+        return false;
+    }
+
+    /**
+     * Execute the destroy query .
+     *
+     * @param  array|mixed  $conditions
+     * @return boolean
+     */
+    public function destroy($conditions){
+        
+        $db = static::getDB();
+        $tableName = $this->_table;
+
+        $sqlQuery = "DELETE FROM $tableName WHERE $conditions";
+
+        $query = $db->query($sqlQuery);
+
+        if($query){
+            return true;
+        }else {
+            return false;
+        }
+    }
+
+     /**
+     * Execute the delete query (delete table).
+     *
+     * @return boolean
+     */
+    public function delete(){
+        
+        $db = static::getDB();
+        $tableName = $this->_table;
+
+        $sqlQuery = "DELETE FROM $tableName";
+
+        $query = $db->query($sqlQuery);
+
+        if($query){
+            return true;
+        }else {
+            return false;
+        }
+    }
+
+    public function setDefineArray($name, $ary) {
+        if ($name == "") return;
+        global $$name;
+        if (isset($$name)) return;
+        $temp = array();
+        foreach ($ary as $key => $value) {
+            $temp[$key] = $value;
+        }
+        $$name = $temp;
+    }
 }
 

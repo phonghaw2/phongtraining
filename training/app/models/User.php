@@ -9,10 +9,10 @@ use Core\QueryBuilder;
 /**
  * Example user model
  *
- * PHP version 7.0
  */
 class User extends Model
 {
+    // binding
     private $_table = 'user';
 
     use QueryBuilder;

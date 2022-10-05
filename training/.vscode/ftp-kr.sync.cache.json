@@ -219,6 +219,207 @@
               "modified": false
             }
           }
+        },
+        "training": {
+          ".vscode": {},
+          ".vscode - Copy": {
+            "ftp-kr.json": {
+              "type": "-",
+              "size": 338,
+              "lmtime": 1664414863628,
+              "modified": false
+            },
+            "ftp-kr.sync.cache.json": {
+              "type": "-",
+              "size": 13125,
+              "lmtime": 1664188747926,
+              "modified": false
+            },
+            "launch.json": {
+              "type": "-",
+              "size": 743,
+              "lmtime": 1664155710265,
+              "modified": false
+            },
+            "settings.json": {
+              "type": "-",
+              "size": 123,
+              "lmtime": 1664155710279,
+              "modified": false
+            }
+          },
+          "README.md": {
+            "type": "-",
+            "size": 21,
+            "lmtime": 0,
+            "modified": false
+          },
+          "app": {
+            "controllers": {
+              "AdminController.php": {
+                "type": "-",
+                "size": 1888,
+                "lmtime": 1664857771650,
+                "modified": false
+              },
+              "AuthController.php": {
+                "type": "-",
+                "size": 392,
+                "lmtime": 0,
+                "modified": false
+              },
+              "DefaultController.php": {
+                "type": "-",
+                "size": 392,
+                "lmtime": 1664186937707,
+                "modified": true
+              },
+              "HomeController.php": {
+                "type": "-",
+                "size": 2606,
+                "lmtime": 1664187847400,
+                "modified": true
+              }
+            },
+            "views": {
+              "default": {
+                "[ftp-kr Reporting].txt": {
+                  "type": "-",
+                  "size": 1069,
+                  "lmtime": 0,
+                  "modified": false
+                },
+                "index copy.php": {
+                  "type": "-",
+                  "size": 2537,
+                  "lmtime": 1664177298404,
+                  "modified": false
+                },
+                "index.php": {
+                  "type": "-",
+                  "size": 2537,
+                  "lmtime": 0,
+                  "modified": false
+                },
+                "test.php": {
+                  "type": "-",
+                  "size": 2537,
+                  "lmtime": 1664186951155,
+                  "modified": false
+                }
+              }
+            },
+            "models": {
+              "Home.php": {
+                "type": "-",
+                "size": 3488,
+                "lmtime": 1664445492563,
+                "modified": false
+              },
+              "User.php": {
+                "type": "-",
+                "size": 1306,
+                "lmtime": 1664417331535,
+                "modified": false
+              }
+            }
+          },
+          "composer.json": {
+            "type": "-",
+            "size": 261,
+            "lmtime": 1664188339425,
+            "modified": false
+          },
+          "composer.lock": {
+            "type": "-",
+            "size": 589,
+            "lmtime": 0,
+            "modified": true
+          },
+          "core": {
+            "Controller.php": {
+              "type": "-",
+              "size": 1568,
+              "lmtime": 0,
+              "modified": false
+            },
+            "Error.php": {
+              "type": "-",
+              "size": 1992,
+              "lmtime": 0,
+              "modified": false
+            },
+            "Http": {
+              "Bag": {},
+              "Request.php": {
+                "type": "-",
+                "size": 4508,
+                "lmtime": 1664857751289,
+                "modified": false
+              },
+              "Response.php": {
+                "type": "-",
+                "size": 3434,
+                "lmtime": 0,
+                "modified": false
+              },
+              "Session.php": {
+                "type": "-",
+                "size": 3207,
+                "lmtime": 0,
+                "modified": false
+              },
+              "inc": {}
+            },
+            "Model.php": {
+              "type": "-",
+              "size": 694,
+              "lmtime": 0,
+              "modified": true
+            },
+            "QueryBuilder.php": {
+              "type": "-",
+              "size": 8664,
+              "lmtime": 1664418334743,
+              "modified": false
+            },
+            "Router.php": {
+              "type": "-",
+              "size": 6128,
+              "lmtime": 1664187957608,
+              "modified": false
+            },
+            "View.php": {
+              "type": "-",
+              "size": 608,
+              "lmtime": 0,
+              "modified": false
+            }
+          },
+          "public": {
+            ".htaccess": {
+              "type": "-",
+              "size": 178,
+              "lmtime": 0,
+              "modified": false
+            },
+            "admin": {},
+            "admin.php": {
+              "type": "-",
+              "size": 25,
+              "lmtime": 0,
+              "modified": false
+            },
+            "css": {},
+            "index.php": {
+              "type": "-",
+              "size": 923,
+              "lmtime": 1664188192719,
+              "modified": false
+            },
+            "js": {}
+          },
+          "vendor": {}
         }
       }
     }
